@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>jquery-events-exercise-8</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+  *{margin:20px;padding:0;box-sizing:border-box}
+  body,html{height:100vh;width:100vw;margin:0;padding:0;box-sizing:border-box;display:flex}.m_main-section{height:500px;width:800px}.m_main-section .m_row{width:100%;height:calc(100%/3);display:flex}.m_row.m_center{margin-left:35px;height:50px;width:10px;}.m_block{height:100%;width:200px;display:flex}.m_block p{font-size:20px;color:black}#m_block1{background:red}#m_block2{background:yellow}#m_block3{background:green}#m_block4{background:orange}.m_btn{padding:10px}.m_instruction-section{margin-bottom:50px}.m_instruction-section p{margin-bottom:10px;color:#000;font-size:18px;font-weight:bold}.m_instruction-section ul{font-size:16px;color:#000;list-style:none}.m_instruction-section ul li{margin-bottom:10px}</style>
+
+  
+</head>
+<body>
+    
+<div>
+<div class="m_main-section">    
+            
+    <div class="m_row">
+        <div id="m_block1" class="m_block">
+            <p>1</p>
+        </div>
+        <div id="m_block2" class="m_block">
+            <p>2</p>
+        </div>
+    </div>
+
+<br>
+    <div class="m_row m_center" >
+        <button class="btn btn-primary" id="anti">Anti-Clockwise</button>&nbsp;
+        <button class="btn btn-primary" id="clockwise">Clockwise</button>
+    
+    </div>
+<br>
+<br>
+
+    <div class="m_row">
+        <div id="m_block4" class="m_block">
+            <p>4</p>
+        </div>
+        <div id="m_block3" class="m_block">
+            <p>3</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</body>
+<script>
+
+$( "#clockwise" ).click(function(event) {
+
+
+  $('#m_block1' ).css( "background-color", "orange");
+  $('#m_block2' ).css( "background-color", "red");
+  $('#m_block3' ).css( "background-color", "yellow");
+  $('#m_block4' ).css( "background-color", "green");    
+    
+ 
+});
+
+$( "#anti" ).click(function(event) {
+
+
+  $('#m_block1' ).css( "background-color", "red");
+  $('#m_block2' ).css( "background-color", "yellow");
+  $('#m_block3' ).css( "background-color", "green");
+  $('#m_block4' ).css( "background-color", "orange");
+    
+ 
+});
+
+    
+
+  
+
+</script>
+</html>
